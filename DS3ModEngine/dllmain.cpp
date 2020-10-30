@@ -52,14 +52,7 @@ BOOL CheckSekiroVersion()
 	if (size == (long)65682008 || size == (long)65682312 || size == (long)65688152)
 	{
 		// Check for CODEX crack
-		wchar_t buffer2[MAX_PATH];
-		GetCurrentDirectoryW(MAX_PATH * 2, buffer2);
-		StringCchCatW(buffer2, MAX_PATH, L"\\sekiro.cdx");
-		if (GetFileAttributesW(buffer2) != INVALID_FILE_ATTRIBUTES)
-		{
-			// CODEX crack detected
-			return false;
-		}
+		// Fuck yourself
 		return true;
 	}
 	else
